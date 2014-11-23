@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<div style="margin-top: 50px">
+<title >青山疗养院首页</title>
+</div>
+
+<style type = "text/css">
+body{
+background: url(img/dcb.jpg);
+}
+
+.title{
+color:white;
+background-color:rgba(110,120,120,0.3);
+width:400px;
+
+position:fixed;
+bottom:150px;
+right:110px;
+-webkit-transition: -webkit-transform 2s;
+}
+.title:hover{
+color:#DDEE55;
+cursor:pointer;
+-webkit-transform:scale(1.5,1.5);
+}
+
+#phone:hover{
+color:#88FFDD;
+letter-spacing:5px;
+cursor:help;
+}
+
+#button{
+position:fixed;
+bottom:300px;
+left:600px;
+font-size:20px;
+cursor:crosshair;
+}
+
+#tb{
+width:400px;
+position:fixed;
+top:200px;
+left:480px;
+background-color:rgba(100,140,150,0.3);
+border-color:transparent;
+padding: 10px;
+}
+
+#tb:hover{
+border-style: dotted;
+border-color:yellow;
+}
+#menu{
+position:absolute;
+left:50px;
+top:-16px;
+}
+#menu ul li{
+float:left;
+overflow:hidden;
+}
+
+#menu a{
+font-weight: bold;
+display:block;
+width:180px;
+background-color:#CEDDDD;
+opacity:0.5;
+padding:10px;
+text-decoration:none;
+text-align:center;
+}
+
+#menu a:hover{
+background-color:#EDAADD;
+opacity:0.7;
+}
+
+div.info{
+position:fixed;
+top:40px;
+left:90px;
+width:200px;
+background-color:#CEDDDD;
+opacity:0.5;
+display:none;
+}
+
+div.info p{
+text-align:center;
+margin:0px;
+padding:30px 20px 30px 20px;
+border-top:3px solid #FFFFFF;
+}
+
+#move img{
+position:relative;
+display:block;
+width:100px;
+height:100px;
+margin:0px 0px -25px 0px;
+}
+
+#move {
+text-align:center;
+margin:0px 0px -15px 0px;
+background-color:white;
+position:absolute;
+border:2px solid #BEBEBE;
+box-shadow:10px 10px 7px;
+-webkit-animation: bg-move 6s linear infinite ;
+}
+
+@-webkit-keyframes bg-move {
+	0%{bottom: 0px; left:0px;}
+	100%{bottom:0px; left:1250px;}
+	}
+</style>
+</head>
+
+<body>
+<div class="title">
+<h1 ><center><font style = "font-size:45px;">这里是青山疗养院</font></center></h1>
+</div>
+<div id="menu">
+<ul>
+<li class="clickinfo">
+<a  href = "intro.html">疗养院简介</a>
+</li>
+<li>
+<a href = "crew.html">治疗团队</a>
+</li>
+<li>
+<a href = "apply.html">入院申请</a>
+</li>
+<li>
+<a href = "bbs.html">技术论坛</a>
+</li>
+<li>
+<a href = "map.html">地图</a>
+</li>
+<li>
+<a href="login.html">会员登录
+</a>
+</li>
+</ul>
+
+</div>
+
+<div class="info">
+<p>双击猫会消失，再单击会出现</p>
+<p>但是非常难点到</p>
+<p>没有其他任何功能！</p>
+</div>
+<table style="margin-top:20px"align = "center" border = "5px" height="15px" width= "500px" id="tb">
+<tr align = "center">
+<th colspan = "2" align = "center" id="phone">
+<font style = "font-size:20px;">
+院长休假，免费电话打不通
+</font>
+</th>
+<!--   jjjj -->
+</tr>
+
+<div id="move" class="move">
+<img src="img/jc.jpg"><br/>
+<p>点我！</p>
+<div>
+
+<center>
+<input id="button" type = "button" value ="我要看免费电话" onclick="getPhone()"></input>
+</center>
+<script src="jquery-1.11.1.min.js">
+</script>
+<script>
+function getPhone(){
+x = document.getElementById("phone");
+
+if(x.innerHTML=="400123123"){
+   x.innerHTML="院长休假，免费电话打不通";
+   button.value = "我要看免费电话"
+}
+else{
+   x.innerHTML="400123123";
+   button.value = "隐藏电话"
+}
+}
+
+$(document).ready(function(){
+   $("#move").dblclick(function(){
+     $("#move img").hide();
+   });
+   $("#move").click(function(){
+     $("#move img").show();
+   });
+   $(".clickinfo").mouseover(function(){
+     $(".info").slideDown(600);
+   });
+   $("body").mouseout(function(){
+     $(".info").slideUp(400);
+   });
+});
+
+
+  
+
+
+ 
+
+
+</script>
+
+</body>
+</html>
