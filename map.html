@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>地图</title>
+<style type="text/css">
+body{
+background-color: #DEDDAA;
+}
+#back a{
+position:fixed;
+top:0px;
+right:0px;
+}
+#map img{
+position:absolute;
+width: 1200px;
+height:630px;
+}
+
+#map img{
+-webkit-animation: map-move 4s linear alternate;
+}
+
+@-webkit-keyframes map-move {
+	0%{clip:rect(0px 0px 700px 0px)}
+	100%{clip:rect(0px 1200px 700px 0px)}
+	}
+</style>
+</head>
+<body>
+<div id="map">
+<img src="img/map.jpg">
+</div>
+<div id="back">
+<a href = "Qingshan Hospital.html">回到首页</a>
+</div >
+
+</body>
+</html>
