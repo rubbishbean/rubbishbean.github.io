@@ -2,7 +2,7 @@
 <html>
 <head>
 <div style="margin-top: 50px">
-<title >青山疗养院首页</title>
+<title >Green Mountain Bughouse</title>
 </div>
 
 
@@ -125,27 +125,27 @@ box-shadow:10px 10px 7px;
 
 <body>
 <div class="title">
-<h1 ><center><font style = "font-size:45px;">这里是青山疗养院</font></center></h1>
+<h1 ><center><font style = "font-size:45px;">Here you are at Green Mountain Bughouse!</font></center></h1>
 </div>
 <div id="menu">
 <ul>
 <li class="clickinfo">
-<a  href = "intro.html">疗养院简介</a>
+<a  href = "intro.html">About the Bughouse</a>
 </li>
 <li>
-<a href = "crew.html">治疗团队</a>
+<a href = "crew.html">About Crew</a>
 </li>
 <li>
-<a href = "apply.html">入院申请</a>
+<a href = "apply.html">Apply</a>
 </li>
 <li>
-<a href = "bbs.html">技术论坛</a>
+<a href = "bbs.html">Forum</a>
 </li>
 <li>
-<a href = "map.html">地图</a>
+<a href = "map.html">Location</a>
 </li>
 <li>
-<a href="login.html">会员登录
+<a href="login.html">Log in
 </a>
 </li>
 </ul>
@@ -153,15 +153,15 @@ box-shadow:10px 10px 7px;
 </div>
 
 <div class="info">
-<p>双击猫会消失，再单击会出现</p>
-<p>但是非常难点到</p>
-<p>没有其他任何功能！</p>
+<p>Double-click conceal the mad cat, click again to reveal it</p>
+<p>It's little bit hard to click on it</p>
+<p>Other functions are under construction</p>
 </div>
 <table style="margin-top:20px"align = "center" border = "5px" height="15px" width= "500px" id="tb">
 <tr align = "center">
 <th colspan = "2" align = "center" id="phone">
 <font style = "font-size:20px;">
-院长休假，免费电话打不通
+Dean is in vacation, the line is busy!
 </font>
 </th>
 <!--   jjjj -->
@@ -169,11 +169,11 @@ box-shadow:10px 10px 7px;
 
 <div id="move" class="move">
 <img src="https://cloud.githubusercontent.com/assets/6693736/5156428/f7f192d2-728f-11e4-9ae2-ea3d2ed4c9e1.jpg"><br/>
-<p>点我！</p>
+<p>Click me！</p>
 <div>
 
 <center>
-<input id="button" type = "button" value ="我要看免费电话" onclick="getPhone()"></input>
+<input id="button" type = "button" value ="I want to see the telephone #" onclick="getPhone()"></input>
 </center>
 <script src="js/jquery-1.11.1.min.js">
 </script>
@@ -182,12 +182,12 @@ function getPhone(){
 x = document.getElementById("phone");
 
 if(x.innerHTML=="400123123"){
-   x.innerHTML="院长休假，免费电话打不通";
-   button.value = "我要看免费电话"
+   x.innerHTML="Dean is in vacation, the line is busy!";
+   button.value = "I want to see the telephone #"
 }
 else{
    x.innerHTML="400123123";
-   button.value = "隐藏电话"
+   button.value = "Conceal it"
 }
 }
 
